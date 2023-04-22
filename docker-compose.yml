@@ -1,0 +1,12 @@
+version: "3"
+services:
+  warp:
+    image: aleskxyz/warp-svc:1.2
+    ports:
+    - 1080:1080
+    restart: always
+    environment:
+    - "WARP_LICENSE="
+    - "FAMILIES_MODE=off"
+    volumes:
+    - ./warp:/var/lib/cloudflare-warp
