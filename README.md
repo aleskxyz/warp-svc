@@ -41,7 +41,7 @@ docker exec warp warp-cli --accept-tos status
 Status update: Connected
 Success
 ```
-### Using a proxy for other containers with docker-compose
+### Using as a proxy for other containers with docker-compose
 
 ```
 version: "3"
