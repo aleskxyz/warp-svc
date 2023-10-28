@@ -3,12 +3,7 @@ Cloudflare WARP client as a socks5 server in docker
 
 This dockerfile will create a docker image with official Cloudflare WARP client for linux and provides a socks5 proxy to use in other compaliant applications either in your local machine or by other docker containers in a docker compose or Kubernetes.
 
-The official Cloudflare WARP client for Linux:
-
-* Only listens on localhost for the socks proxy so you cannot use it in a docker container which need to bind on 0.0.0.0
-* Generates lots of DEBGU logs and you cannot reduse the verbosity level of it in configuration
-
-Both of these issues has been solved in this dockerfile.
+The official Cloudflare WARP client for Linux only listens on localhost for the socks proxy so you cannot use it in a docker container which need to bind on 0.0.0.0
 
 ## Features
 * Register a new Cloudflare WARP account

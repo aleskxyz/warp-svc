@@ -1,14 +1,6 @@
 #!/bin/bash
 set -m
-mkdir -p /var/lib/cloudflare-warp
-cd /var/lib/cloudflare-warp
-ln -s /dev/null cfwarp_daemon_dns.txt
-ln -s /dev/null cfwarp_service_boring.txt
-ln -s /dev/null cfwarp_service_dns_stats.txt
-ln -s /dev/null cfwarp_service_log.txt
-ln -s /dev/null cfwarp_service_stats.txt
-cd /
-warp-svc | grep -v DEBUG &
+warp-svc &
 sleep 2
 warp-cli --accept-tos register
 warp-cli --accept-tos set-proxy-port 40000
