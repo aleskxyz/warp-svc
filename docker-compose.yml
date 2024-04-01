@@ -1,7 +1,7 @@
 version: "3"
 services:
   warp:
-    image: aleskxyz/warp-svc:latest
+    image: ghcr.io/aleskxyz/warp-svc:latest
     ports:
     - 1080:1080
     restart: always
