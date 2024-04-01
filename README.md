@@ -42,7 +42,7 @@ Success
 version: "3"
 services:
   warp:
-    image: aleskxyz/warp-svc:latest
+    image: ghcr.io/aleskxyz/warp-svc:latest
     expose:
     - 1080
     restart: always
